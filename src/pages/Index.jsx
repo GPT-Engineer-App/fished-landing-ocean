@@ -3,27 +3,9 @@
 import { Fish, Waves, Anchor, Facebook, Twitter, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const Navbar = () => (
-  <nav className="bg-blue-800 text-white p-4">
-    <div className="container mx-auto flex justify-between items-center">
-      <div className="flex items-center space-x-2">
-        <Fish className="h-6 w-6" />
-        <span className="text-xl font-bold">FishWorld</span>
-      </div>
-      <ul className="flex space-x-4">
-        <li><a href="#" className="hover:text-blue-200">Home</a></li>
-        <li><a href="#" className="hover:text-blue-200">Species</a></li>
-        <li><a href="#" className="hover:text-blue-200">Habitats</a></li>
-        <li><a href="#" className="hover:text-blue-200">Conservation</a></li>
-      </ul>
-    </div>
-  </nav>
-);
-
 const Index = () => {
   return (
     <div className="flex flex-col min-h-screen">
-      <Navbar />
       <div className="flex-grow bg-gradient-to-b from-blue-100 to-blue-300">
         <div className="container mx-auto px-4 py-16">
         <header className="text-center mb-12">
