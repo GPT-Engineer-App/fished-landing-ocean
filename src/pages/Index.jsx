@@ -57,7 +57,7 @@ const Index = () => {
             title="Conservation"
             description="Understand the importance of preserving our oceans and marine life."
           />
-        </div>
+        </motion.div>
 
         <div className="text-center mb-16">
           <Button size="lg" className="bg-pink-500 hover:bg-pink-600 text-white">
