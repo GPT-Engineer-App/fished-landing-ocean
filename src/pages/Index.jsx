@@ -34,11 +34,48 @@ const Index = () => {
           />
         </div>
 
-        <div className="text-center">
+        <div className="text-center mb-16">
           <Button size="lg" className="bg-pink-500 hover:bg-pink-600 text-white">
             Start Your Aquatic Journey
           </Button>
         </div>
+
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold text-blue-800 mb-6 text-center">Popular Fish Species</h2>
+          <div className="grid md:grid-cols-4 gap-6">
+            {['Clownfish', 'Blue Tang', 'Angelfish', 'Betta'].map((fish) => (
+              <div key={fish} className="bg-white rounded-lg shadow-md p-4">
+                <img src={`/placeholder.svg`} alt={fish} className="w-full h-40 object-cover rounded-md mb-4" />
+                <h3 className="text-xl font-semibold text-blue-700">{fish}</h3>
+                <p className="text-gray-600">Learn more about the fascinating {fish.toLowerCase()}.</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="bg-blue-100 rounded-lg p-8 mb-16">
+          <h2 className="text-3xl font-bold text-blue-800 mb-4 text-center">Join Our Conservation Efforts</h2>
+          <p className="text-blue-700 text-center mb-6">Help us protect marine life and preserve our oceans for future generations.</p>
+          <div className="text-center">
+            <Button className="bg-green-500 hover:bg-green-600 text-white">Get Involved</Button>
+          </div>
+        </section>
+
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold text-blue-800 mb-6 text-center">Fun Fish Facts</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              'Some fish can fly out of the water to escape predators.',
+              'The smallest known fish is only 7.9 mm long.',
+              'Fish have been on Earth for more than 500 million years.'
+            ].map((fact, index) => (
+              <div key={index} className="bg-white rounded-lg shadow-md p-6">
+                <p className="text-blue-700 font-semibold mb-2">Did you know?</p>
+                <p className="text-gray-600">{fact}</p>
+              </div>
+            ))}
+          </div>
+        </section>
       </div>
     </div>
   );
