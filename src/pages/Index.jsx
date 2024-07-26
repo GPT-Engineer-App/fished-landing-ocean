@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 const Index = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <>
       <div className="flex-grow bg-gradient-to-b from-blue-100 to-blue-300">
         <div className="container mx-auto px-4 py-16">
         <header className="text-center mb-12">
@@ -44,7 +44,7 @@ const Index = () => {
         </div>
       </div>
       <Footer />
-    </div>
+    </>
   );
 };
 
