@@ -35,7 +35,7 @@ const Index = () => {
         </div>
 
         <div className="text-center">
-          <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+          <Button size="lg" className="bg-pink-500 hover:bg-pink-600 text-white">
             Start Your Aquatic Journey
           </Button>
         </div>
