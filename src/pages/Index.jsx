@@ -5,9 +5,8 @@ import { Button } from "@/components/ui/button";
 
 const Index = () => {
   return (
-    <>
-      <div className="flex-grow bg-gradient-to-b from-blue-100 to-blue-300">
-        <div className="container mx-auto px-4 py-16">
+    <div className="flex-grow bg-gradient-to-b from-blue-100 to-blue-300">
+      <div className="container mx-auto px-4 py-16">
         <header className="text-center mb-12">
           <h1 className="text-4xl md:text-6xl font-bold text-blue-800 mb-4">
             Dive into the World of Fishes
@@ -41,10 +40,7 @@ const Index = () => {
           </Button>
         </div>
       </div>
-        </div>
-      </div>
-      <Footer />
-    </>
+    </div>
   );
 };
 
